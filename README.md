@@ -1,2 +1,5 @@
 # handsfree-live
-在线学习 handsfree
+
+学习 [handsfree.js](https://github.com/MIDIBlocks/handsfree)。
+
+![](./screnshot.png)

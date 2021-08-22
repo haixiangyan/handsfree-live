@@ -1,0 +1,25 @@
+<head>
+  <!-- Include Handsfree.js -->
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./handsfree.js"></script>
+</head>
+
+<body>
+<!-- Your code must be inside body as it applies classes to it -->
+<script>
+  // Let's use handtracking and show the webcam feed with wireframes
+  const handsfree = new Handsfree({
+    showDebug: true,
+    hands: true,
+    facemesh: true,
+    pose: true,
+  })
+  handsfree.enablePlugins('browser')
+  handsfree.start()
+
+  // Create a plugin named "logger" to show data on every frame
+  handsfree.use('logger', data => {
+    console.log(data.hands)
+  })
+</script>
+</body>
